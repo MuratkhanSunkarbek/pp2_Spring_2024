@@ -1,6 +1,6 @@
-carname =Volve
+carname ="Volve"
 
-x= 50
+cdx=50
 
 x =10
 y=15 
@@ -15,5 +15,6 @@ x=y=z="Orange"
 def myfunc():
     global x
     x = "fantastic"
+    
 
 

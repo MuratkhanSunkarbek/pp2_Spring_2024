@@ -1,5 +1,5 @@
-cdtxt ="Hello world"
-x= txt[2:5]
+txt ="Hello world"
+x = txt[2:5]
 print (x)
 
 x = "Hello world"
