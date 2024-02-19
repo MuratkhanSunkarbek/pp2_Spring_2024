@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cars = ["pp1", "pp2", "pp3"]
 
 x = cars[0]
@@ -35,3 +36,14 @@ cars = ["Ford", "Volvo", "BMW"]
 cars.remove("Volvo")
 
 print(cars)
+=======
+carname =Volve
+
+x= 50
+
+x =10
+y=15 
+print (x+y)
+
+
+>>>>>>> cc74ff4dc86162b91024b0c06fec7fe5959cd402
