@@ -32,7 +32,7 @@ print(next(b))
 
 
 #3
-a=("apple","banana")
+a=("appleeee","banana")
 for x in a:
     print(x)
 
