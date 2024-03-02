@@ -1,0 +1,29 @@
+#1
+import json
+x='{"name":"Sunkarbek","age":"17","surname":"Muratkhan"}'
+y=json.loads(x)
+print(y["age"])
+
+
+
+#2
+import json
+x='{"name":"Sunkarbek","age":"17","surname":"Muratkhan"}'
+y=json.loads(x)
+print(y["name"])
+
+#3
+
+import json
+x='{"name":"Sunkarbek","age":"17","surname":"Muratkhan"}'
+y=json.dumps(x)
+
+print(y)
+
+
+
+#4
+import json
+x='{"name":"Sunkarbek","age":"17","surname":"Muratkhan"}'
+y=json.dumps(x)
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
