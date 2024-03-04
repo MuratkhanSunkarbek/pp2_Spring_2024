@@ -1,0 +1,69 @@
+import math
+
+def degree_to_radian(degrees):
+    radians = degrees * (math.pi / 180)
+    return radians
+
+input_degree = float(input("Input degree: "))
+radian = degree_to_radian(input_degree)
+print(radian)
+
+
+
+
+
+
+
+import math
+
+height = float(input("Height: "))
+
+base1 = float(input("Base, first value: "))
+base2 = float(input("Base, second value: "))
+area = ((base1 + base2) / 2) * height
+print(area)
+
+
+
+
+
+
+
+
+import math
+
+def area_of_regular_polygon(num_sides, side_length):
+
+    angle_in_radians = math.radians(180 / num_sides)
+    
+    area = (num_sides * side_length ** 2) / (4 * math.tan(angle_in_radians))
+    
+    return area
+
+num_sides = int(input("number of sides: "))
+
+side_length = float(input("Input the length of a side: "))
+
+polygon_area = area_of_regular_polygon(num_sides, side_length)
+
+print("The area of the polygon :", polygon_area)
+
+
+
+
+
+
+
+
+
+
+
+
+def area_of_parallelogram(base_length, height):
+    area = base_length * height
+    return area
+base_length = float(input("Length of base: "))
+height = float(input("Height of parallelogram: "))
+parallelogram_area = area_of_parallelogram(base_length, height)
+
+print("Expected Output:", parallelogram_area)

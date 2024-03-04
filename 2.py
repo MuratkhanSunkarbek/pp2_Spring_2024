@@ -1,40 +1,56 @@
-<<<<<<< HEAD
-x = lambda a: a + 10
-print(x(10))
+#1
+def myfunc():
+    x=250
+    print(x)
+    
+myfunc()    
 
 
 
-x = lambda a, b: a * b
-print(x(8, 5))
+
+#2
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
+
+
+#3
+x=200
+def myfunc ():
+    print(x)
+
+myfunc()
+print(x)
 
 
 
-x = lambda a, b, c: a + b + c
-print(x(9, 11, 16))
 
 
 
-def myfunc(n):
-  return lambda a : a * n
+#4
+x = 300
 
-mydoubler = myfunc(2)
+def myfunc():
+  x = 200
+  print(x)
 
-print(mydoubler(33))
+myfunc()
+
+print(x)
 
 
 
-def myfunc(n):
-  return lambda a : a * n
+#5
+x = 300
 
-mydoubler = myfunc(2)
-mytripler = myfunc(3)
+def myfunc():
+  global x
+  x = 200
 
-print(mydoubler(15)) 
-print(mytripler(15))
+myfunc()
 
-=======
-#This is comment
-'''
-My name is Sunkarbek .I am 17
-'''
->>>>>>> cc74ff4dc86162b91024b0c06fec7fe5959cd402
+print(x)

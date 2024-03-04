@@ -1,62 +1,41 @@
-class MyClass:
-  x = 5
+#1
+import datetime
 
-p1 = MyClass()
-print(p1.x)
+x = datetime.datetime.now()
 
-
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-p1 = Person("Sunkarbek", 17)
-
-print(p1.name)
-print(p1.age)
-
-
-
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-p1 = Person("Sunkarbek", 17)
-print(p1)
+print(x)
 
 
 
 
-class Person:
-  def __init__(mysillyobject, name, age):
-    mysillyobject.name = name
-    mysillyobject.age = age
+#2
+import datetime
 
-  def myfunc(abc):
-    print("Hello my name is " + abc.name)
+x = datetime.datetime.now()
 
-p1 = Person("Sunkarbek", 17)
-p1.myfunc()
+print(x.year)
+print(x.strftime("%A"))
 
 
+#3
+import datetime
+
+x=datetime.datetime(2024,4,2)
+print(x)
 
 
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
 
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+#4
+import datetime
 
-p1 = Person("Sunkarbek", 17)
-
-del p1.age
-
-print(p1.age)
+x=datetime.datetime(2024,4,2)
+print(x.strftime("%B"))
 
 
 
 
 
+#5
+import datetime
+x=datetime.datetime(2024,4,2)
+print(x.strftime("%m"))

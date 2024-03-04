@@ -1,71 +1,32 @@
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
 
-  def printname(self):
-    print(self.firstname, self.lastname)
+x = min(5, 10, 25)
+y = max(5, 10, 25)
 
-
-x = Person("Sunkarbek", "Muratkhan")
-x.printname()
+print(x)
+print(y)
 
 
 
 
+#2
+x = pow(4, 3)
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
-
-  def printname(self):
-    print(self.firstname, self.lastname)
-
-class Student(Person):
-  def __init__(self, fname, lname):
-    Person.__init__(self, fname, lname)
-
-x = Student("Sunkarbek", "Muratkhan")
-x.printname()
+print(x)
 
 
 
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
 
-  def printname(self):
-    print(self.firstname, self.lastname)
-
-class Student(Person):
-  def __init__(self, fname, lname, year):
-    super().__init__(fname, lname)
-    self.graduationyear = year
-
-x = Student("Sunkarbek", "Muratkhan", 2024)
-print(x.graduationyear)
+#3
+import math
+x=math.sqrt(36)
+print(x)
 
 
 
+#4
+import math
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+x = math.pi
 
-  def printname(self):
-    print(self.firstname, self.lastname)
-
-class Student(Person):
-  def __init__(self, fname, lname, year):
-    super().__init__(fname, lname)
-    self.graduationyear = year
-
-  def welcome(self):
-    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
-
-x = Student("Sunkarbek", "Muratkahn", 2024)
-x.welcome()
+print(x)

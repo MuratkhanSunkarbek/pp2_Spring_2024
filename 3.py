@@ -1,49 +1,29 @@
-<<<<<<< HEAD
-cars = ["pp1", "pp2", "pp3"]
+#1
+import platform
 
-x = cars[0]
-
+x = platform.system()
 print(x)
 
 
-fruits = ["banana", "strawberry", "apple" , "kiwi" ]
+#2
+import platform
 
-x = len(fruits)
-
+x = dir(platform)
 print(x)
 
 
-fruits = ["banana", "strawberry", "apple"]
+#3
+import math
 
-fruits.append("kiwi")
-
-print(fruits)
-
+print(math.factorial(10))
 
 
+#4
+import math as x
 
-
-fruits = ["banana", "kiwi", "apple"]
-
-cars.pop(2)
-
-print(fruits)
+print(x.factorial(3))
 
 
 
-cars = ["Ford", "Volvo", "BMW"]
-
-cars.remove("Volvo")
-
-print(cars)
-=======
-carname =Volve
-
-x= 50
-
-x =10
-y=15 
-print (x+y)
 
 
->>>>>>> cc74ff4dc86162b91024b0c06fec7fe5959cd402

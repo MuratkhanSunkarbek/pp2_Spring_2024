@@ -1,4 +1,13 @@
-<<<<<<< HEAD
+
+#1
+mytuple = ("ford","bmb","mustang")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+=======
+
 def my_function(name):
   print(name  +  " Hello ")
 
@@ -54,39 +63,4 @@ print(my_function(8))
 
 
 
-def tri_recursion(k):
-  if(k > 0):
-    result = k + tri_recursion(k - 1)
-    print(result)
-  else:
-    result = 0
-  return result
 
-print("\n\nRecursion Example Results")
-tri_recursion(6)
-=======
-txt ="Hello world"
-x= txt[2:5]
-print (x)
-
-x = "Hello world"
-print(len(x))
-
-txt ="Hello world"
-x=txt[0]
-print (x)
-
-txt ="Hello world"
-txt=txt.upper()
-print(txt)
-
-txt="Hello world"
-txt=txt.lower()
-print(txt)
-
-
-age = 36
-txt = "My name is John, and I am {}"
-
-print(txt.format(age))
->>>>>>> cc74ff4dc86162b91024b0c06fec7fe5959cd402
