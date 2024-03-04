@@ -1,0 +1,213 @@
+import re
+def match_pattern(string):
+    pattern = r'ab*'
+    if re.fullmatch(pattern, string):
+        return True
+    else:
+        return False
+strings = ['a', 'ab', 'abb', 'abbb', 'ac', 'abc', 'abbc']
+for s in strings:
+    print(f"{s}: {match_pattern(s)}")
+
+
+
+
+
+
+
+
+
+import re
+def match_pattern(string):
+    pattern = r'ab{2,3}'
+    if re.fullmatch(pattern, string):
+        return True
+    else:
+        return False
+
+strings = ['abb', 'abbb', 'a', 'ab', 'abc', 'abbbb', 'abbbbbc']
+for s in strings:
+    print(f"{s}: {match_pattern(s)}")
+
+
+
+
+
+
+
+
+
+
+import re
+def find_sequences(text):
+    pattern = r'\b[a-z]+_[a-z]+\b'
+    sequences = re.findall(pattern, text)
+    return sequences
+
+text = "privet america_usa"
+sequences = find_sequences(text)
+print("Found sequences:", sequences)
+
+
+
+
+
+
+
+
+
+
+
+
+import re
+
+def find_uppercase_sequences(text):
+    pattern = r'\b[A-Z][a-z]+\b'
+    sequences = re.findall(pattern, text)
+    return sequences
+with open('row.txt', 'r',encoding='utf-8') as file:
+    text = file.read()
+    sequences = find_uppercase_sequences(text)
+    for sequence in sequences:
+                    print(sequence)
+
+
+
+
+
+
+
+
+
+
+
+
+import re
+
+def match_strings(filename):
+    with open(filename, 'r',encoding='utf-8') as file:
+        text = file.read()
+    
+    pattern = r'a.*b\b'
+    matches = re.findall(pattern, text)
+    
+    return matches
+
+filename = 'row.txt' 
+matching_strings = match_strings(filename)
+print("Strings matching the pattern:")
+for string in matching_strings:
+    print(string)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def replace_chars_with_colon(input_string):
+    chars_to_replace = [' ', ',', '.']
+    for char in chars_to_replace:
+        input_string = input_string.replace(char, ':')
+    return input_string
+
+def replace_in_file(input_filename, output_filename):
+    with open(input_filename, 'r', encoding='utf-8') as file:
+        text = file.read()
+    modified_text = replace_chars_with_colon(text)
+    with open(output_filename, 'w', encoding='utf-8') as file:
+        file.write(modified_text)
+
+input_filename = 'row.txt'  # Update with your input file name
+output_filename = 'row_modifed.txt'  # Update with your output file name
+replace_in_file(input_filename, output_filename)
+print(output_filename)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def snake_to_camel(snake_case_string):
+    words = snake_case_string.split('_')
+    camel_case_string = words[0] + ''.join(word.capitalize() for word in words[1:])
+    return camel_case_string
+def convert_snake_to_camel(input_filename):
+    with open(input_filename, 'r', encoding='utf-8') as input_file:
+        snake_case_input = input_file.read().strip()
+    camel_case_output = snake_to_camel(snake_case_input)
+    print("Camel case:", camel_case_output)
+input_filename = 'row.txt'
+convert_snake_to_camel(input_filename)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import re
+
+with open('row.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
+    pattern = r"[A-Z]+"
+    result = re.split(pattern, text)
+    print(result)
+
+
+
+
+
+
+
+
+
+
+
+import re
+with open('row.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
+    pattern = r"([A-Z])"
+    result = re.sub(pattern, r" \1", text).strip()
+    print(result)
+
+
+
+
+
+
+
+
+
+import re
+
+with open('camel.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
+    result = re.sub(r'(?<!^)(?=[A-Z])', '_',  text).strip()
+
+    print(result)        
